@@ -16,8 +16,9 @@
         <div class="container">
            <h1>Contatti Rubrica</h1>
             <div class="lista-contatti">
-                <ul v-for="contatti  in contattiRubrica" 
-                :class="{'contatti-attivi': contatti.attivo === true, 'contatti-non-attivi':  contatti.attivo === false}"
+                <ul v-for="(contatti,index)  in contattiRubrica" 
+                :class="{active: contatti.attivo === true, 'contatti-non-attivi':  contatti.attivo === false}"
+                @click="showCognome(index)"
                 >
                  <li>{{contatti.nome}} {{contatti.cognome}} {{contatti.numero}}
                  </li>

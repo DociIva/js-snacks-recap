@@ -1,3 +1,6 @@
+.lista-contatti:hover {
+    cursor: pointer;
+}
 .contatti-non-attivi {
     color: red;
 }

@@ -48,15 +48,12 @@ const app = new Vue({
                 attivo:false,
             },
         ],
-        activeContatti: 0,
+        activeIndex: 0,
     }, 
     methods: {
         showCognome(index) {
-
-            console.log(index);
-            this.activeContatti = index;
-
-            console.log(this.contattiRubrica[this.activeContatti]);
+        
+            console.log(this.contattiRubrica[index].cognome);
         }
     }
 });
