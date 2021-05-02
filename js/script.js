@@ -1,4 +1,65 @@
 //console.log('ciao belli');
+//SNACK 1
+// A partire da un array di stringhe, crea un secondo array formattando le
+// stringhe del primo array in minuscolo e con l'iniziale maiuscola.
+// Es: ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
+
+// 1 primo arr
+const arrayStringa = ['sergio' , 'MARIO', 'RiCCardo', 'MiRko'];
+console.table(arrayStringa);
+
+// 2 crea un secondo array mettendo apposto tutte le scritte dle primo array | map per crerare nuovo arr
+const newStringa = arrayStringa.map(element => 
+    // charAt restituisce una nuova stringa che consiste nella singola unità di codice UTF-16 situata nell'offset specificato nella stringa.
+    // `The character at index ${index} is ${sentence.charAt(index)}`    => .toLocaleUpperCase() + arrayStringa[index].toLocaleLowerCase()
+
+    `${element[0].toUpperCase()}${element.slice(1).toLowerCase()}`);
+console.log(newStringa);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Pome
 
 //SNACK 1
