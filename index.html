@@ -7,8 +7,28 @@
     <title>js-snacks-recap</title>
     <!--Vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!--style-->
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
+    <div id="app">
+        <div class="container">
+           <h1>Contatti Rubrica</h1>
+            <div class="lista-contatti">
+                <ul v-for="contatti  in contattiRubrica" 
+                :class="{'contatti-attivi': contatti.attivo === true, 'contatti-non-attivi':  contatti.attivo === false}"
+                >
+                 <li>{{contatti.nome}} {{contatti.cognome}} {{contatti.numero}}
+                 </li>
+                </ul>
+            </div>
+           
+           
+
+           
+        </div>
+    </div>
 
 
     <!--JS-->

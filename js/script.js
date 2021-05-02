@@ -1,6 +1,69 @@
 //console.log('ciao belli');
 
 /*
+SNACK 4 -> VUE 
+Partendo da un array di oggetti con i contatti di una rubrica con nome, cognome, numero, attivo (true,false)
+Andiamo a stampare nome cognome e numero dentro una lista.
+Fare in modo poi che i contatti non attivi (attivo: false) siano stampati di colore rosso mentre gli altri normalmente di nero.
+Cliccando sul numero della persona fate in modo che appaia in console il cognome della persona di cui è stato cliccato il numero
+*/
+const app = new Vue({
+    el:'#app',
+    data: {
+        contattiRubrica: [
+            {
+                nome:'Lino',
+                cognome:'Rossi',
+                numero:335225412,
+                attivo:true,
+            },
+            {
+                nome:'Pino',
+                cognome:'Verdi',
+                numero:335225412,
+                attivo:false,
+            },
+            {
+                nome:'Lino',
+                cognome:'Orange',
+                numero:335225412,
+                attivo:true,
+            },
+            {
+                nome:'Ugo',
+                cognome:'Lilla',
+                numero:335225412,
+                attivo:false,
+            },
+            {
+                nome:'France',
+                cognome:'Viola',
+                numero:335225412,
+                attivo:true,
+            },
+            {
+                nome:'Lillo',
+                cognome:'Possi',
+                numero:335225412,
+                attivo:false,
+            },
+        ],
+        activeContatti: 0,
+    }, 
+    methods: {
+        showCognome(index) {
+
+            console.log(index);
+            this.activeContatti = index;
+
+            console.log(this.contattiRubrica[this.activeContatti]);
+        }
+    }
+});
+
+
+
+/*
 SNACK 3  -> si potrebbe ottimizzare con una funzione separata per il capitalize
 A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l'iniziale maiuscola.
 Es: ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
