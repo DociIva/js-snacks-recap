@@ -1,4 +1,21 @@
 //console.log('ciao belli');
+
+/*
+SNACK 3  -> si potrebbe ottimizzare con una funzione separata per il capitalize
+A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l'iniziale maiuscola.
+Es: ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
+*/ 
+/*
+
+const stringaArray = ["peach" , "luigi", "Mario", "yoshi"];
+console.log(stringaArray);
+
+const newArray = stringaArray.map((element,index) => {
+   return element.charAt(0).toUpperCase() + stringaArray[index].slice(1).toLowerCase()
+});
+
+console.log(newArray)
+*/
 /*
 SNACK 2
 Un oggetto rappresenta una finestra di un browser e contiene due campi: 
@@ -11,13 +28,14 @@ un numero che indica l'indice della tab aperta nell'array:
 Il software deve guardare se c'è un social aperto ed eliminarlo dalle tab.
 Nel caso la tab fosse attiva, deve attivare la successiva.
 */
+/*
+const windows = {
+    tabAperte: ["Facebook", "GitHub", "Gmail"],
+    activeTab: 0,
+}
+console.log(windows);
 
-
-
-
-
-
-
+*/
 
 
 
@@ -33,11 +51,11 @@ const arrayStringa = ['sergio' , 'MARIO', 'RiCCardo', 'MiRko'];
 console.table(arrayStringa);
 
 // 2 crea un secondo array mettendo apposto tutte le scritte dle primo array | map per crerare nuovo arr
-const newStringa = arrayStringa.map(element => 
-    // charAt restituisce una nuova stringa che consiste nella singola unità di codice UTF-16 situata nell'offset specificato nella stringa.
+const newStringa = arrayStringa.map((element, index) => { 
     // `The character at index ${index} is ${sentence.charAt(index)}`    => .toLocaleUpperCase() + arrayStringa[index].toLocaleLowerCase()
-
-    `${element[0].toUpperCase()}${element.slice(1).toLowerCase()}`);
+    return element.charAt(0).toUpperCase() +arrayStringa[index].slice(1).toLowerCase()
+});
+    
 console.log(newStringa);
 */
 
