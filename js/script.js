@@ -1,9 +1,33 @@
 //console.log('ciao belli');
+/*
+SNACK 2
+Un oggetto rappresenta una finestra di un browser e contiene due campi: 
+un array di tab aperte
+un numero che indica l'indice della tab aperta nell'array:
+{
+    "tab": ["Facebook", "GitHub", "Gmail"],
+    "activeTab": 0
+}
+Il software deve guardare se c'è un social aperto ed eliminarlo dalle tab.
+Nel caso la tab fosse attiva, deve attivare la successiva.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 //SNACK 1
 // A partire da un array di stringhe, crea un secondo array formattando le
 // stringhe del primo array in minuscolo e con l'iniziale maiuscola.
 // Es: ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
-
+/*
 // 1 primo arr
 const arrayStringa = ['sergio' , 'MARIO', 'RiCCardo', 'MiRko'];
 console.table(arrayStringa);
@@ -15,50 +39,7 @@ const newStringa = arrayStringa.map(element =>
 
     `${element[0].toUpperCase()}${element.slice(1).toLowerCase()}`);
 console.log(newStringa);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 //Pome
 
